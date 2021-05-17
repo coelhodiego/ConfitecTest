@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Confitec.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Confitec.Api.Controllers.ClienteController">
+            <summary>
+            
+            </summary>    
+            <response code="400">Requisição inválida</response>   
+            <response code="404">A página requerida é inexistente</response>   
+            <response code="500">Erro interno de servidor</response>            
+        </member>
+        <member name="M:Confitec.Api.Controllers.ClienteController.GetAll">
+            <summary>
+            Listar rodos clientes
+            </summary>
+        </member>
+        <member name="M:Confitec.Api.Controllers.ClienteController.GetById(System.Int32)">
+            <summary>
+            Buscar cliente por id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Confitec.Api.Controllers.ClienteController.Add(Confitec.Api.ViewModels.ClienteViewModel)">
+            <summary>
+            Adiciona cliente
+            </summary>
+            <param name="clienteViewModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Confitec.Api.Controllers.ClienteController.Update(Confitec.Api.ViewModels.ClienteViewModel)">
+            <summary>
+            Atualiza dados do cliente
+            </summary>
+            <param name="clienteViewModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Confitec.Api.Controllers.ClienteController.Delete(Confitec.Api.ViewModels.ClienteViewModel)">
+            <summary>
+            Remove cliente da base
+            </summary>
+            <param name="clienteViewModel"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

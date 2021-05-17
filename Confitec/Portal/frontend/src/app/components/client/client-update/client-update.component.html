@@ -1,0 +1,35 @@
+<mat-card >
+    <mat-card-title>Alterar Cliente</mat-card-title>
+    <form *ngIf="loaded" >
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)]="client.nome" name="nome">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Sobrenome" [(ngModel)]="client.sobrenome" name="Sobrenome">
+        </mat-form-field>
+        <mat-form-field>
+            <input type="email" matInput placeholder="Email" [(ngModel)]="client.email" name="Email">
+        </mat-form-field>
+        <mat-form-field>
+            <input type="Date" matInput  [(ngModel)]="client.dataNascimento"  name="DataNascimento">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Escolaridade</mat-label>
+            <mat-select [(ngModel)]="client.escolaridade" name="Escolaridade">
+                <mat-option value=1>Infantil</mat-option>
+                <mat-option value=2>Fundamental</mat-option>
+                <mat-option value=3>Médio</mat-option>
+                <mat-option value=4>Superior</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </form>
+    
+    <button mat-raised-button (click)="updateClient()" color="primary">
+        Salvar
+    </button>
+    
+    <button mat-raised-button (click)="cancel()" color="">
+        Cancelar
+    </button>
+</mat-card>
+
